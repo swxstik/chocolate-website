@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Assorted Chocolates</title>
+  <link rel="stylesheet" href="services.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <img src="cwimages/Asset 67 2.png" alt="logo" style="height: 30px; width: auto;">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="tservices.html">Services</a></li>
+        <li><a href="ourstory.html">Our Story</a></li>
+      </ul>
+    </nav>
+    <a href="contactus.html">
+      <button class="contact-btn">Contact</button>
+    </a>
+  </header>
+
+
+ <!--CHOCOLATE SERVICES-->
+<section class="chocolate-services">
+  <section id="service-detail-container" class="service-detail-container" style="display: none;"></section>
+  <h2>Chocolate Services</h2>
+  
+  <div class="services-container">
+
+    <!-- Chocolate Fountain Card -->
+    <div class="service-card">  
+      <div class="share-btn">
+        <a href="https://wa.me/919811793888" target="_blank">
+        <img src="chocolate services/107784.png" alt="Share" /></a>
+      </div>
+      <div class="service-image">
+        <img src="chocolate services/WhatsApp Image 2024-12-13 at 16.11.34_870248.png" alt="Chocolate Fountain" />
+      </div>
+      <div class="service-details">
+        <div class="service-content">
+          <h3>Chocolate Fountain</h3>
+          <p>A chocolate fountain is a fun and indulgent treat that adds 
+          excitement to any event. Perfect for weddings, birthdays, or celebrations, 
+          it lets guests dip treats into flowing, velvety chocolate, making any occasion sweeter.</p>
+          </div>
+          <button class="view-btn" onclick="viewService('chocolateFountain')">View</button> 
+
+      </div>
+    </div>
+
+    <!-- Automobile Gifts Card -->
+    <div class="service-card">
+      <div class="share-btn">
+        <a href="https://wa.me/919811793888" target="_blank">
+        <img src="chocolate services/107784.png" alt="Share" /></a>
+      </div>
+      <div class="service-image">
+        <img src="chocolate services/Asset 36.png" alt="Automobile Gifts" />
+      </div>
+      <div class="service-details">
+        <div class="service-content">
+          <h3>Automobile Gifts</h3>
+          <p>Automobile chocolate gifts, with their car-themed 
+          designs and delightful flavors, add excitement to any celebration.
+           Perfect for car enthusiasts and new car owners, they blend creativity and indulgence into memorable moments.</p>
+          </div>
+          <button class="view-btn" onclick="viewService('automobileGifts')">View</button>
+      </div>
+    </div>
+
+
+    <div class="service-card">
+      <div class="share-btn">
+        <a href="https://wa.me/919811793888" target="_blank">
+        <img src="chocolate services/107784.png" alt="Share" /></a>
+      </div>
+      <div class="service-image">
+        <img src="chocolate services/Asset 31.png" alt="Customized Chocolates" />
+      </div>
+      <div class="service-details">
+        <div class="service-content">
+          <h3>Customized Chocolates</h3>
+          <p>
+          Customized chocolate bars bring a personal touch to celebrations, 
+          blending unique designs and flavors into every moment. 
+          They create sweet memories and add individuality to every joyous occasion.</p>
+          </div>
+          <button class="view-btn" onclick="viewService('customizedChocolates')">View</button>
+      </div>
+    </div>
+
+
+    <div class="service-card">
+      <div class="share-btn">
+        <a href="https://wa.me/919811793888" target="_blank">
+        <img src="chocolate services/107784.png" alt="Share" /></a>
+      </div>
+      <div class="service-image">
+        <img src="chocolate services/assorted chocolate.png" alt="Assorted Chocolates" />
+      </div>
+      <div class="service-details">
+        <div class="service-content">
+          <h3>Assorted Chocolates</h3>
+          <p>Assorted chocolates add a burst of joy and flavor 
+          to any occasion, making every celebration truly special. 
+          With their variety and charm, they create sweet memories worth savoring.</p>
+          </div>
+          <button class="view-btn" onclick="viewService('assortedChocolates')">View</button>
+      </div>
+    </div>
+
+
+    <div class="service-card">
+      <div class="share-btn">
+        <a href="https://wa.me/919811793888" target="_blank">
+        <img src="chocolate services/107784.png" alt="Share" /></a>
+      </div>
+      <div class="service-image">
+        <img src="chocolate services/marbel chocolate.png" alt="Marble Chocolates" />
+      </div>
+      <div class="service-details">
+        <div class="service-content">
+          <h3>Marble Chocolates</h3>
+          <p>Marble chocolates blend rich flavors with artistic swirls, creating a 
+          treat that's both indulgent and visually stunning. 
+          Perfect for any celebration, they turn moments into sweet, unforgettable memories.</p>
+        </div>
+        <button class="view-btn" onclick="viewService('marbleChocolates')">View</button>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="share-btn">
+        <a href="https://wa.me/919811793888" target="_blank">
+        <img src="chocolate services/107784.png" alt="Share" /></a>
+      </div>
+      <div class="service-image">
+        <img src="chocolate services/WhatsApp Image 2025-03-15 at 21.46.26_57f90ccb.jpg" alt="Printed Chocolates" />
+      </div>
+      <div class="service-details">
+        <div class="service-content">
+          <h3>Printed Chocolates</h3>
+          <p>Printed chocolates add a personal and creative touch to celebrations,
+           making every moment uniquely special.
+           Their delightful designs and flavors create lasting memories filled with sweetness and fun.</p>
+        </div>
+        <button class="view-btn" onclick="viewService('printedChocolates')">View</button>
+      </div>
+    </div>
+    <div id="service-detail-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <button onclick="closeModal()" class="back-btn">←</button>
+      
+        <!-- Main Image + Navigation -->
+        <div class="main-image-wrapper">
+          <button onclick="prevImage()" class="nav-btn">←</button>
+          <img id="mainImage" src="" alt="Main" class="main-img" />
+          <button onclick="nextImage()" class="nav-btn">→</button>
+        </div>
+      
+        <!-- Thumbnails -->
+        <div id="thumbnails" class="thumbnail-container"></div>
+      
+        <!-- Title and Short Description -->
+        <h2 id="serviceTitle" class="modal-title"></h2>
+        <p id="serviceDescriptionShort" class="short-desc"></p>
+      
+        <!-- Buttons -->
+        <div class="button-group">
+          <button class="btn contact-btn">Contact</button>
+          <button class="btn share-btn">Share</button>
+        </div>
+      
+        <!-- Note -->
+        <div id="note" class="note-box"></div>
+      
+        <!-- Long Description -->
+        <h3>Description</h3>
+        <p id="serviceDescriptionLong" class="long-desc"></p>
+      </div>
+      <script src="services.js"></script>
+
+
+      
+
+<!--FOOTERR-->
+
+
+</section> <!-- close your main content section -->
+
+<!-- FOOTER should go here, outside all other containers-->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <div class="link-column">
+        <a href="index.html">Home</a>
+        <a href="products.html">Product</a>
+        <a href="services.html">Services</a>
+        <a href="ourstory.html">Our Story</a>
+      </div>
+      <div class="link-column">
+        <a href="contactus.html">Contact Us</a>
+        <a href="https://www.instagram.com/chocoworldc/">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-logo">
+      <img src="chocolate services/CW logo (1).png" alt="The Designer Chocolate"/>
+    </div> 
+  </div>
+</footer>
+    
+</body>
+</html>

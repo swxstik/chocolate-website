@@ -1,0 +1,99 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products - Chocoworld</title>
+    <link rel="stylesheet" href="products.css"> <!-- Same CSS file as homepage -->
+  </head>
+  <body style="background-color: #fcf7fb; margin: 0; font-family: 'Poppins', sans-serif;">
+
+    <header class="navbar">
+      <div class="logo">
+          <img src="cwimages/Asset 67 2.png" alt="logo" style="height: 30px; width: auto;">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ourstory.html">Our Story</a></li>
+        </ul>
+      </nav>
+      <a href="contactus.html">
+        <button class="contact-btn">Contact</button>
+      </a>
+    </header>
+
+    <main class="main-container" style="padding: 2rem;">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2 class="sidebar-title">Categories</h2>
+        <ul class="category-list">
+          <li>Assorted Chocolates</li>
+          <li>Automobile Segment</li>
+          <li>Baskets</li>
+          <li>Bowls</li>
+          <li>Corporate Gifting</li>
+          <li>Customized</li>
+          <li>Gifting</li>
+          <li>Hamper</li>
+          <li>Musical Instruments</li>
+          <li>Pots</li>
+          <li>Special Occasions</li>
+          <li>Thaalis</li>
+          <li>Trays</li>
+          <li>Valentine's Day</li>
+          <li>Weddings</li>
+        </ul>
+      </aside>
+    
+      <!-- Products Grid -->
+      <section class="product-grid">
+        <h1 style="font-size: 1.8rem; font-weight: 600; margin-bottom: 1.5rem;">Products</h1>
+        <div id="product-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+          <!-- JS will inject products here -->
+        </div>
+
+    
+        <!-- Pagination-->
+        <div class="pagination" id="pagination" style="margin-top: 2rem; text-align: center;">
+          <button class="pagination-btn disabled" id="prevBtn">&larr; Previous</button>
+          <button class="pagination-btn active">1</button>
+          <button class="pagination-btn">2</button>
+          <button class="pagination-btn">3</button>
+          <button class="pagination-btn">4</button>
+          <button class="pagination-btn">5</button>
+          <button class="pagination-btn" id="nextBtn">Next &rarr;</button>
+        </div>
+      </section>
+    </main>
+    
+
+        
+    
+
+    <!--FOOTERR-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <div class="link-column">
+            <a href="index.html">Home</a>
+            <a href="products.html">Product</a>
+            <a href="services.html">Services</a>
+            <a href="ourstory.html">Our Story</a>
+          </div>
+          <div class="link-column">
+            <a href="contactus.html">Contact Us</a>
+
+            <a href= "https://www.instagram.com/chocoworldc/">Instagram</a>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <img src="chocolate services/CW logo (1).png" alt="The Designer Chocolate"/>
+        </div> 
+      </div>
+    </footer>
+    <script src="products.js"></script>
+  </body>
+  </html>

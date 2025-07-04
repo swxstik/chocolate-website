@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Service Details</title>
+  <link rel="stylesheet" href="services.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="cwimages/Asset 67 2.png" alt="logo" style="height: 30px; width: auto;">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="ourstory.html">Our Story</a></li>
+      </ul>
+    </nav>
+    <a href="contactus.html">
+      <button class="contact-btn">Contact</button>
+    </a>
+  </header>
+
+  <main class="service-container">
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+      <button onclick="prevImage()" class="arrow left">
+        <img src="products/chevron-left.png" alt="Previous" />
+      </button>
+      
+      <img id="mainImage" src="" alt="Main Image" class="main-image" />
+      
+      <button onclick="nextImage()" class="arrow right">
+        <img src="products/chevron-right (1).png" alt="Next" />
+      </button>
+      
+      <div id="thumbnails" class="thumbnail-container"></div>
+    </div>
+  
+    <!-- Service Details -->
+    <div class="content-section">
+      <h2 id="serviceTitle"></h2>
+      <p id="serviceDescriptionShort"></p>
+  
+      <div class="buttons">
+        <a href="contactus.html"><button class="contact-btn2">Contact</button></a>
+        <button class="share share-btn3">Share</button>
+      </div>
+      <br>
+      <p id="note" class="note-box"></p>
+    </div>
+  
+    <!-- Long Description Section (separate below the image gallery) -->
+    <section class="long-description">
+      <h3>Description</h3>
+      <p id="serviceDescriptionLong"></p>
+    </section>
+  </main>
+  
+
+  <script src="services.js"></script>
+  <script>
+    const serviceId = localStorage.getItem("selectedService");
+    const service = chocolateServices.find(s => s.id === serviceId);
+
+    if (service) {
+      document.getElementById("serviceTitle").textContent = service.title;
+      document.getElementById("serviceDescriptionShort").textContent = service.shortDescription;
+      document.getElementById("serviceDescriptionLong").textContent = service.longDescription;
+      document.getElementById("note").textContent = service.note;
+
+      const mainImage = document.getElementById("mainImage");
+      const thumbnails = document.getElementById("thumbnails");
+      let currentIndex = 0;
+
+      function updateMainImage(index) {
+        mainImage.src = service.images[index];
+      }
+
+      // Thumbnails
+      service.images.forEach((src, idx) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.classList.add("thumbnail");
+        img.onclick = () => {
+          currentIndex = idx;
+          updateMainImage(idx);
+        };
+        thumbnails.appendChild(img);
+      });
+
+      // Show first image
+      updateMainImage(0);
+
+      window.prevImage = () => {
+        currentIndex = (currentIndex - 1 + service.images.length) % service.images.length;
+        updateMainImage(currentIndex);
+      };
+
+      window.nextImage = () => {
+        currentIndex = (currentIndex + 1) % service.images.length;
+        updateMainImage(currentIndex);
+      };
+
+      window.goBack = () => {
+        window.history.back();
+      };
+    } else {
+      document.body.innerHTML = "<p style='text-align:center; padding:2rem;'>Service not found.</p>";
+    }
+  </script>
+</body>
+</html>

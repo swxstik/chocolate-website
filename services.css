@@ -1,0 +1,472 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #faf6fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo {
+  font-family: 'Georgia', cursive;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 550;
+  transition: color 0.3s;
+}
+
+.nav-links a.active {
+  color: #5c0a26; /* dark cherry color */
+}
+
+.nav-links a:hover {
+  color: #5c0a26;
+}
+
+.contact-btn {
+  padding: 12px 28px;
+  margin-left: 30px;
+  border: 1.5px solid #000;
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-btn:hover {
+  background-color:#5c0a26;
+  color: white;
+  border: 2px solid #630f22;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-btn2 {
+  height: 48px;
+  width: 218px;
+  padding: 12px 28px;
+  margin-left: 1px;
+  border: 1.5px solid #000;
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-btn:hover {
+  background-color:#5c0a26;
+  color: white;
+  border: 2px solid #630f22;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.service-container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.image-gallery {
+  position: relative;
+  flex: 1;
+}
+
+.main-image {
+  width: 638px;
+  height: 469px;
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  border-radius: 16px;
+  display: block;
+  margin-bottom: 8px; /* This acts like a "gap" from other elements below */
+}
+
+
+.arrow {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px; 
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+  border-color: #c04;
+}
+
+.content-section {
+  margin-top: 10px;
+  margin-bottom: 40px; /* Space between content section and long description */
+  font-size: 18px;  
+  margin-left: 15px;
+}
+
+
+.content-section h2 {
+  font-size: 2rem;
+  color: #320000;
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+.content-section p {
+  font-size: 1rem;
+  line-height: 1.8; /* Increase line height for better readability */
+  margin-bottom: 1.5rem; /* Add space after paragraphs */
+}
+
+.content-section .note-box {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px; /* Add some space before notes */
+}
+
+.content-section h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #320000;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 10px; /* Small space between buttons */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.buttons button {
+  padding: 8px 16px; /* Smaller padding for compactness */
+  font-size: 14px; /* Smaller font size */
+  border-radius: 6px;
+  border: 1px solid #52001a;
+  background-color: #52001a;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #5c0a26;
+}
+
+.buttons button.share {
+  background-color: white;
+  color: #52001a;
+}
+
+.buttons button.share:hover {
+  background-color: #f7c9d0;
+}
+
+
+
+
+
+/* CHOCOLATE SERVICES*/
+.chocolate-services {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.chocolate-services h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #260011;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  gap: 40px; /* Adds space between the sections */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.service-card {
+  width: 1113px;
+  height: 312px;
+  display: flex;
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 24px;
+  box-sizing: border-box;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.service-image {
+  flex: 0 0 290px; /* fixed width */
+  height: 260px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+
+.share-btn {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow:none;
+}
+
+.share-btn img {
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+
+.share-btn3 {
+  height: 48px;
+  width: 218px; 
+  padding: 12px 28px;
+}
+
+
+
+.long-description {
+  clear: both;
+  margin-top: 40px; /* Space between content and description */
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Optional for background separation */
+}
+
+
+
+.long-description h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #260011;
+  margin-bottom: 20px;
+}
+
+.long-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+
+
+
+.service-content {
+  flex-grow: 1;
+  margin-bottom: 16px; /* Optional spacing between content and button */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.service-content h3 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #260011;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+}
+
+
+.view-btn {
+  background-color: #f7c9d0;
+  width: 100%;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #260011;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start; 
+  transition: background 0.3s;
+}
+.view-btn:hover {
+  background-color: #f5b5bf;
+}
+
+
+
+
+
+/*MODAL*/
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+} 
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+.image-gallery {
+  position: relative;
+  flex: 1;
+}
+
+.main-image {
+  width: 638px;
+  height: 469px;
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  border-radius: 16px;
+  display: block;
+  margin-bottom: 8px; /* This acts like a "gap" from other elements below */
+}
+.arrow img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer {
+  width: 100%; /* or 100vw */
+  background-color: #2e050d; /* dark maroon */
+  color: #fff;
+  padding: 60px 100px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box; /* important */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px; /* Space between two columns */
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-column a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.link-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo h2 {
+  font-family: 'Cursive', sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.footer-logo p {
+  font-family: 'Cursive', sans-serif;
+  font-size: 18px;
+  margin-top: 8px;
+} 
+
+
+
