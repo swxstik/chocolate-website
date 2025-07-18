@@ -30,7 +30,7 @@
     .product-detail {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 16px;
       margin-top: 20px;
     }
 
@@ -83,7 +83,7 @@
       .product-detail {
         flex-direction: row;
         align-items: flex-start;
-        gap: 50px;
+        gap: 24px;
       }
 
       .product-image-container {
@@ -101,7 +101,7 @@
 
     @media (min-width: 1024px) {
       .product-detail {
-        gap: 80px;
+        gap: 32px;
       }
 
       .product-image-container {
@@ -197,6 +197,30 @@
         font-size: 14px;
       }
     }
+    .contact-btn {
+      background: #5c0a26;
+      color: #fff;
+      border: 2px solid #5c0a26;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+    .share-btn {
+      background: #fff;
+      color: #5c0a26;
+      border: 2px solid #5c0a26;
+        padding: 8px 18px;
+        border-radius: 6px;
+        font-weight: 600;
+       cursor: pointer;
+       text-decoration: none;
+       margin-top: 8px;
+       margin-left: 0;
+          }      }
   </style>
 </head>
 <body>
@@ -229,15 +253,20 @@
       <div class="product-image-container">
         <img id="productImage" class="product-image" src="" alt="Product Image" />
       </div>
-      
       <div class="product-info">
         <h1 class="product-title" id="productName">Loading...</h1>
         <div id="productCode"></div>
         <div class="product-weight" id="productWeight"></div>
-        <div class="product-description" id="productDescription"></div>
+        <div style="margin-top:16px;">
+          <a href="contactus.html" class="contact-btn" style="margin-right:10px;">Contact</a>
+          <button id="shareBtn" class="share-btn">Share</button>
+        </div>
       </div>
     </div>
+    <h2 style="margin-top:24px;">Description</h2>
+    <div class="product-description" id="productDescription"></div>
   </div>
+</div>
 
   <script src="products.js"></script>
   <script>
@@ -275,6 +304,8 @@
       document.getElementById("productImage").src = product.image;
       document.getElementById("productImage").alt = product.name;
       document.getElementById("productName").textContent = product.name;
+      const code = product.product_code || product.code || '';
+      document.getElementById("productCode").textContent = code ? `Product Code: ${code}` : '';
       document.getElementById("productWeight").textContent = product.weight;
       document.getElementById("productDescription").textContent = product.description || "No description available.";
     } else {
@@ -286,6 +317,16 @@
         </div>
       `;
     }
+    document.getElementById("shareBtn").onclick = function() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.getElementById("productName").textContent,
+      url: window.location.href
+    });
+  } else {
+    alert("Share not supported on this browser.");
+  }
+};
   </script>
 
   <footer class="footer">

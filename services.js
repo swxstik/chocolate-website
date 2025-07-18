@@ -18,7 +18,7 @@ const chocolateServices = [
     shortDescription: "Automobile chocolate gifts, with their car-themed designs and delightful flavors, add excitement to any celebration. Perfect for car enthusiasts and new car owners, they blend creativity and indulgence into memorable moments.",
     longDescription: "Automobile chocolate gifts, crafted in delightful car-themed designs and flavors, add a unique spark to any celebration. These automobile themed gifts capture the joy of both chocolate indulgence and the thrill of automobiles experience. Perfect for car enthusiasts, new car owners and those seeking something out of the ordinary, they make birthdays, anniversaries, corporate events, and festive occasions even more memorable. Combining creativity and deliciousness, automobile chocolate gifts turn every moment into a celebration filled with fun, flavor, and a dash of playful elegance.",
     images: [
-      "services/am.png",
+      "chocolate services/asset 36.png",
       "services/sm2.png",  
       "services/am3.png",
       "services/am4.png",

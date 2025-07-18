@@ -24,27 +24,30 @@
     </a>
   </header>
 
-  <main class="service-container">
-    <!-- Image Gallery -->
-    <div class="image-gallery">
-      <button onclick="prevImage()" class="arrow left">
-        <img src="products/chevron-left.png" alt="Previous" />
-      </button>
-      
-      <img id="mainImage" src="" alt="Main Image" class="main-image" />
-      
-      <button onclick="nextImage()" class="arrow right">
-        <img src="products/chevron-right (1).png" alt="Next" />
-      </button>
-      
-      <div id="thumbnails" class="thumbnail-container"></div>
+  <!-- Replace everything inside <main class="service-container"> ... </main> with this: -->
+<main class="service-container">
+  <div class="service-detail">
+    <!-- Left side: image and description -->
+    <div>
+      <div class="image-gallery">
+        <button onclick="prevImage()" class="arrow left">
+          <img src="product pictures/chevron-left.png" alt="Previous" />
+        </button>
+        <img id="mainImage" src="" alt="Main Image" class="main-image" />
+        <button onclick="nextImage()" class="arrow right">
+          <img src="product pictures/chevron-right (1).png" alt="Next" />
+        </button>
+        <div id="thumbnails" class="thumbnail-container"></div>
+      </div>
+      <section class="long-description" style="margin-top:24px;">
+        <h3>Description</h3>
+        <p id="serviceDescriptionLong"></p>
+      </section>
     </div>
-  
-    <!-- Service Details -->
+    <!-- Right side: info/buttons -->
     <div class="content-section">
       <h2 id="serviceTitle"></h2>
       <p id="serviceDescriptionShort"></p>
-  
       <div class="buttons">
         <a href="contactus.html"><button class="contact-btn2">Contact</button></a>
         <button class="share share-btn3">Share</button>
@@ -52,12 +55,8 @@
       <br>
       <p id="note" class="note-box"></p>
     </div>
-  
-    <!-- Long Description Section (separate below the image gallery) -->
-    <section class="long-description">
-      <h3>Description</h3>
-      <p id="serviceDescriptionLong"></p>
-    </section>
+  </div>
+</main>
   </main>
   
 
