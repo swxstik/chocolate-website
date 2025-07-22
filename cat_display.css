@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #2c0e0e;
+  }
+  
+  
+  
+  /*Corporate , Weddings, Birthdays, Giftings, B2B, B2C*/
+  
+  
+  @font-face {
+    font-family: 'blenda';
+    src: url(products/blenda-script/Blenda\ Script.otf);
+  }
+  .scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: #fff;
+  }
+  
+  .scrolling-track {
+    display: inline-block;
+    padding-left: 100%; /* Start from right */
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .scroll-item, .dot {
+    display: inline-block;
+    font-family: 'blenda', sans-serif;
+    font-weight: 400;
+    font-size: 98px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #2e0000;
+    margin: 0 30px;
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+  }
+  
+  .logo {
+    font-family: 'Georgia', cursive;
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 550;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a.active {
+    color: #5c0a26; /* dark cherry color */
+  }
+  
+  .nav-links a:hover {
+    color: #5c0a26;
+  }
+  
+  .contact-btn {
+    padding: 12px 28px;
+    margin-left: 30px;
+    border: 1.5px solid #000;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .contact-btn:hover {
+    background-color:#5c0a26;
+    color: white;
+    border: 2px solid #630f22;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-slogan {
+    height: 120px; /* you can adjust the height */
+    width: auto;
+    margin: 20px 0;
+  }
+
+
+
+
+
+
+  /*FOOTER*/
+.footer {
+    width: 100%; 
+    height: 100%;/* or 100vw */
+    background-color: #2e050d; /* dark maroon */
+    color: #fff;
+    padding: 60px 100px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* important */
+    }
+    
+    body, html {
+    margin: 0;
+    padding: 0;
+    }
+    
+    .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    max-width: 1200px;       /* Limit width */
+    margin: 0 auto;          /* Center horizontally */
+    width: 100%;             /* Stretch within footer */
+    }
+    
+    
+    .footer-links {
+    display: flex;
+    gap: 80px; /* Space between two columns */
+    }
+    
+    .link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+    
+    .link-column a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    }
+    
+    .link-column a:hover {
+    text-decoration: underline;
+    }
+    
+    .footer-logo {
+    text-align: center;
+    }
+    
+    .footer-logo h2 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 32px;
+    margin: 0;
+    }
+    
+    .footer-logo p {
+    font-family: 'Cursive', sans-serif;
+    font-size: 18px;
+    margin-top: 8px;
+    }
+    
+    /* Remove underline from links */
+.nav-links a, .category-item a {
+    text-decoration: none;
+    color: inherit; /* Ensure the text color matches the surrounding content */
+  }
+    
+    
+    
+    
+    
+  
